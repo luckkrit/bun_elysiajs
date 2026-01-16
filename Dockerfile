@@ -3,7 +3,7 @@ FROM oven/bun:1 AS base
 WORKDIR /app
 
 # Install dependencies into a temp directory to cache them
-COPY package.json bun.lockb ./
+COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 
 # --- STAGE 2: Run the app ---
