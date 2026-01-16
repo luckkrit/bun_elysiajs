@@ -5,6 +5,7 @@
     "": {
       "name": "codespaces-blank",
       "dependencies": {
+        "@sinclair/typebox": "^0.34.47",
         "elysia": "latest",
       },
       "devDependencies": {
