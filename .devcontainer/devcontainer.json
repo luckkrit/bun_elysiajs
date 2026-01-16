@@ -1,0 +1,15 @@
+{
+  "name": "Bun Project",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/rails/devcontainer/features/bun:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["oven.bun-vscode"]
+    }
+  },
+  "postCreateCommand": "bun install"
+}
