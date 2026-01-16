@@ -6,6 +6,7 @@ services:
       - "3000:3000"
     volumes:
       - .:/app
+      - /app/node_modules
     # Use 'bun --watch' so the server restarts on code changes
     command: bun run --watch src/index.ts
     environment:
